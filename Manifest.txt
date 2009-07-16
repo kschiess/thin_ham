@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/thin_ham
+lib/thin_ham.rb
+test/test_thin_ham.rb
