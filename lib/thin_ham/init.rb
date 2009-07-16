@@ -2,6 +2,8 @@
 require 'thin'
 
 module ThinHam
+  VERSION = "1.0.0"
+  
   def start_server(directory='.')
     puts "serving ham in thin slices at localhost:3000... (Ctrl+C to interrupt)"
     

@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'hoe'
 
-# Hoe.spec 'thin_ham' do
-#   developer('Kaspar Schiess', 'kaspar.schiess@absurd.li')
-# 
-#   # self.rubyforge_name = 'thin_hamx' # if different than 'thin_ham'
-# end
+Hoe.spec 'thin_ham' do
+  developer('Kaspar Schiess', 'kaspar.schiess@absurd.li')
+
+  # self.rubyforge_name = 'thin_hamx' # if different than 'thin_ham'
+end
 
 require 'rake'
 require 'spec/rake/spectask'
