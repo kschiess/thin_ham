@@ -9,6 +9,7 @@ namespace :hoe do # Too much out of the box...
     
     self.extra_deps << [ 'thin', '>=1.0' ]
     self.extra_deps << [ 'rack', '>=1.0' ]
+    self.extra_deps << [ 'haml', '>=2.0.9' ]
   end
 end
 

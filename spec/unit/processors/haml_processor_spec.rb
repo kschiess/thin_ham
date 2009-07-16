@@ -27,6 +27,9 @@ describe ThinHam::Processors::Haml do
     it "should allow including pieces (other haml files)" do
       processor.serve(fixture('foo.html')).should match(/bar/)
     end
+    it "should allow wrapping haml with layout from another file" do
+      processor.serve(fixture('layout.html')).should match(/<p>.*<h1>.*Content.*<\/h1>.*<\/p>/m)
+    end
   end
   
   describe '#process' do
