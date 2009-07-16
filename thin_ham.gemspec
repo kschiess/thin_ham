@@ -39,15 +39,18 @@ server. It is not made that way.}
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<thin>, [">= 1.0"])
       s.add_runtime_dependency(%q<rack>, [">= 1.0"])
+      s.add_runtime_dependency(%q<haml>, [">= 2.0.9"])
       s.add_development_dependency(%q<hoe>, [">= 2.3.2"])
     else
       s.add_dependency(%q<thin>, [">= 1.0"])
       s.add_dependency(%q<rack>, [">= 1.0"])
+      s.add_dependency(%q<haml>, [">= 2.0.9"])
       s.add_dependency(%q<hoe>, [">= 2.3.2"])
     end
   else
     s.add_dependency(%q<thin>, [">= 1.0"])
     s.add_dependency(%q<rack>, [">= 1.0"])
+    s.add_dependency(%q<haml>, [">= 2.0.9"])
     s.add_dependency(%q<hoe>, [">= 2.3.2"])
   end
 end
