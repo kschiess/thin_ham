@@ -1,10 +1,12 @@
 require 'rubygems'
 require 'hoe'
 
-Hoe.spec 'thin_ham' do
-  developer('Kaspar Schiess', 'kaspar.schiess@absurd.li')
+namespace :hoe do # Too much out of the box... 
+  Hoe.spec 'thin_ham' do 
+    developer('Kaspar Schiess', 'kaspar.schiess@absurd.li')
 
-  # self.rubyforge_name = 'thin_hamx' # if different than 'thin_ham'
+    # self.rubyforge_name = 'thin_hamx' # if different than 'thin_ham'
+  end
 end
 
 require 'rake'
