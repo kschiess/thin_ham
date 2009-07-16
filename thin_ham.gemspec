@@ -23,7 +23,7 @@ server. It is not made that way.}
   s.email = ["kaspar.schiess@absurd.li"]
   s.executables = ["thin_ham"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
-  s.files = [".autotest", "History.txt", "Manifest.txt", "README.txt", "Rakefile", "bin/thin_ham", "lib/thin_ham/hamlr.rb", "lib/thin_ham/init.rb", "lib/thin_ham/processors/haml.rb", "lib/thin_ham/processors/markup.rb", "lib/thin_ham/processors/sass.rb", "spec/fixtures/foo.html.haml", "spec/fixtures/html_file.html", "spec/fixtures/pieces/bar.haml", "spec/fixtures/test1.css.sass", "spec/fixtures/test1.html.haml", "spec/spec.opts", "spec/spec_helper.rb", "spec/unit/hamlr_spec.rb", "spec/unit/processors/haml_processor_spec.rb", "spec/unit/processors/markup_processor_spec.rb", "spec/unit/processors/sass_processor_spec.rb"]
+  s.files = [".autotest", "History.txt", "Manifest.txt", "README.txt", "Rakefile", "bin/thin_ham", "lib/thin_ham/hamlr.rb", "lib/thin_ham/init.rb", "lib/thin_ham/processors/haml.rb", "lib/thin_ham/processors/markup.rb", "lib/thin_ham/processors/sass.rb", "spec/fixtures/foo.html.haml", "spec/fixtures/html_file.html", "spec/fixtures/pieces/bar.haml", "spec/fixtures/test1.css.sass", "spec/fixtures/test1.html.haml", "spec/spec.opts", "spec/spec_helper.rb", "spec/unit/hamlr_spec.rb", "spec/unit/processors/haml_processor_spec.rb", "spec/unit/processors/markup_processor_spec.rb", "spec/unit/processors/sass_processor_spec.rb", "thin_ham.gemspec"]
   s.has_rdoc = true
   s.homepage = %q{Source: }
   s.rdoc_options = ["--main", "README.txt"]
@@ -37,11 +37,17 @@ server. It is not made that way.}
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<thin>, [">= 1.0"])
+      s.add_runtime_dependency(%q<rack>, [">= 1.0"])
       s.add_development_dependency(%q<hoe>, [">= 2.3.2"])
     else
+      s.add_dependency(%q<thin>, [">= 1.0"])
+      s.add_dependency(%q<rack>, [">= 1.0"])
       s.add_dependency(%q<hoe>, [">= 2.3.2"])
     end
   else
+    s.add_dependency(%q<thin>, [">= 1.0"])
+    s.add_dependency(%q<rack>, [">= 1.0"])
     s.add_dependency(%q<hoe>, [">= 2.3.2"])
   end
 end
