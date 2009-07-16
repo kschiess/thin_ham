@@ -1,3 +1,8 @@
 #!/usr/bin/env ruby
 
-abort "you need to write me"
+$:.unshift File.dirname(__FILE__) + "/../lib"
+require 'thin_ham/init'
+
+
+directory = ARGV.first || '.'
+ThinHam.start_server

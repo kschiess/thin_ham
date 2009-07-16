@@ -1,26 +1,32 @@
 = thin_ham
 
-* url
+Source: 
+* http://github.com/kschiess/thin_ham
 
 == DESCRIPTION:
 
-FIX (describe your package)
+thin_ham is a small tool to allow for fast prototyping of web sites. It will
+publish files written in haml & sass [1] or alternatively just publish
+whatever other files you happen to have lying around in the relevant
+directories.
 
-== FEATURES/PROBLEMS:
+Since it is written as a web server, it will allow running javascript in your
+prototype to use AJAX to load missing resources. This can be very useful when
+developing modern websites. 
 
-* FIX (list of features or problems)
+Note that thin_ham should under NO circumstances be used as a public web
+server. It is not made that way. 
+
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+Move to a directory of your choice (where your prototype will be located) and 
+run: 
 
-== REQUIREMENTS:
-
-* FIX (list of requirements)
-
-== INSTALL:
-
-* FIX (sudo gem install, anything else)
+  thin_ham
+  
+thin_ham will then output an url under which the current directory can be 
+accessed locally. 
 
 == LICENSE:
 
