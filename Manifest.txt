@@ -20,3 +20,4 @@ spec/unit/hamlr_spec.rb
 spec/unit/processors/haml_processor_spec.rb
 spec/unit/processors/markup_processor_spec.rb
 spec/unit/processors/sass_processor_spec.rb
+thin_ham.gemspec
